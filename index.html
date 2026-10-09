@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,400;125,800;125,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+  <header class="hero">
+    <div class="bar" aria-hidden="true"></div>
+    <div class="top">
+      <span>Welcome<br>to my</span>
+      <span class="top-right">Marketing<br>Intern</span>
+    </div>
+    <div class="title">
+      <button class="arr p" aria-label="Previous card">&#9664;</button>
+      <h1 class="wide" id="ttl" aria-label="Portfolio">Portfolio</h1>
+      <button class="arr n" aria-label="Next card">&#9654;</button>
+      <div class="meta">
+        <span>Seavmey Heang</span>
+        <span>Marketing Intern</span>
+      </div>
+    </div>
+    <nav class="wheel" id="wheel" aria-label="Sections">
+      <svg class="ring" id="ring" viewBox="0 0 100 100" aria-hidden="true">
+        <path id="rp" d="M50 18a32 32 0 1 1 0 64a32 32 0 1 1 0-64" fill="none"/>
+        <text>
+          <textPath href="#rp">PORTFOLIO &#183; MARKETING INTERN &#183; PORTFOLIO &#183; MARKETING INTERN &#183; PORTFOLIO &#183; MARKETING INTERN &#183; PORTFOLIO &#183; MARKETING INTERN &#183; </textPath>
+        </text>
+      </svg>
+      <div class="lab" id="lab">Me</div>
+      <a class="card k-red" href="#work" data-l="Work">
+        <small>Campaigns</small>
+        <div class="glyph"></div>
+        <b>Work</b>
+      </a>
+      <a class="card k-light" href="#work" data-l="Social">
+        <small>Instagram</small>
+        <div class="stat">+38%</div>
+        <b>Social</b>
+      </a>
+      <a class="card k-dark" href="#skills" data-l="Skills">
+        <small>Tools</small>
+        <div class="glow"></div>
+        <b>Skills</b>
+      </a>
+      <a class="card k-photo" href="#about" data-l="Me">
+        <img src="images/portrait.jpg" alt="Portrait of me, a marketing intern, in a black blazer">
+      </a>
+      <a class="card k-light" href="#work" data-l="Email">
+        <small>Newsletter</small>
+        <div class="stat">+22%</div>
+        <b>Email</b>
+      </a>
+      <a class="card k-dark" href="#work" data-l="Research">
+        <small>Brands</small>
+        <div class="stat">5</div>
+        <b>Research</b>
+      </a>
+      <a class="card k-red" href="#contact" data-l="Contact">
+        <small>Say hi</small>
+        <div class="stat">@</div>
+        <b>Contact</b>
+      </a>
+    </nav>
+  </header>
+
+  <div class="mq" aria-hidden="true">
+    <div class="mq-t">
+      <span>Marketing intern &#10022; Unitec student &#10022; Social &#10022; Content &#10022; Email &#10022; Research &#10022;</span>
+      <span>Marketing intern &#10022; Unitec student &#10022; Social &#10022; Content &#10022; Email &#10022; Research &#10022;</span>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About me</h2>
+    <div class="about">
+      <button class="pic" id="pic" aria-label="Say hi">
+        <img src="images/portrait.jpg" alt="Portrait of me">
+        <span class="bub" id="bub" aria-live="polite">Kia ora! &#128075;</span>
+      </button>
+      <div>
+        <span class="live">Currently studying at Unitec</span>
+        <p>Kia ora! I'm a marketing intern and a student at Unitec in Auckland. I learn the theory in class, then test it at work: writing captions, planning content calendars and reading the numbers afterwards.</p>
+        <div class="tabs" role="tablist" aria-label="About me">
+          <button role="tab" aria-selected="true" data-i="0">Study</button>
+          <button role="tab" aria-selected="false" data-i="1">Internship</button>
+          <button role="tab" aria-selected="false" data-i="2">Next</button>
+        </div>
+        <p class="panel" id="panel" role="tabpanel"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Selected work</h2>
+    <p class="hint">Tap a skill to filter the projects. Tap a project to see more.</p>
+    <div class="chips" id="skills" aria-label="Filter by skill">
+      <button class="chip" aria-pressed="true" data-f="all">All</button>
+      <button class="chip" aria-pressed="false" data-f="social">Social media</button>
+      <button class="chip" aria-pressed="false" data-f="copy">Copywriting</button>
+      <button class="chip" aria-pressed="false" data-f="email">Email</button>
+      <button class="chip" aria-pressed="false" data-f="design">Canva</button>
+      <button class="chip" aria-pressed="false" data-f="data">Analytics</button>
+      <button class="chip" aria-pressed="false" data-f="research">Research</button>
+    </div>
+    <div class="work">
+      <button class="proj" data-t="social copy design" aria-expanded="false">
+        <span class="hd">
+          <span class="tag">Social media &middot; Internship</span>
+          <span class="pl" aria-hidden="true">+</span>
+        </span>
+        <span class="h">Instagram launch campaign</span>
+        <span class="more"><span>I planned a four-week series of reels, carousels and stories, wrote the captions and designed the posts in Canva.</span></span>
+        <span class="st"><em data-n="38" data-p="+" data-s="%">+38%</em><small>engagement rate</small></span>
+      </button>
+      <button class="proj" data-t="email copy data" aria-expanded="false">
+        <span class="hd">
+          <span class="tag">Email &middot; Internship</span>
+          <span class="pl" aria-hidden="true">+</span>
+        </span>
+        <span class="h">Monthly newsletter refresh</span>
+        <span class="more"><span>I tested subject lines, tidied the layout and cleaned up the subscriber list, then compared open rates.</span></span>
+        <span class="st"><em data-n="22" data-p="+" data-s="%">+22%</em><small>open rate</small></span>
+      </button>
+      <button class="proj" data-t="research data" aria-expanded="false">
+        <span class="hd">
+          <span class="tag">Research &middot; Unitec</span>
+          <span class="pl" aria-hidden="true">+</span>
+        </span>
+        <span class="h">Competitor and audience study</span>
+        <span class="more"><span>For a Unitec paper I compared five competitors and presented the audience insights in a 10-slide report.</span></span>
+        <span class="st"><em data-n="5" data-p="" data-s="">5</em><small>brands analysed</small></span>
+      </button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let's work together</h2>
+    <button class="mail" id="cp">hseavmey1002@gmail.com</button>
+    <ul class="links">
+      <li><a href="https://www.linkedin.com/in/seavmey-heang-69447b399/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="mailto:hseavmey1002@gmail.com">Send an email</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Seavmey Heang &middot; Marketing Intern &middot; Unitec</span>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <nav class="dock" aria-label="Page">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+    <button id="th" aria-label="Switch light or dark theme">&#9680;</button>
+  </nav>
+  <div class="cur" id="cur" aria-hidden="true"></div>
+
+  <script src="js/content.js"></script>
+  <script src="js/wheel.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
